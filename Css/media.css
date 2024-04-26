@@ -1,0 +1,69 @@
+/* 
+Media Queries Space 
+*/
+/* 
+Mobile devices – 320px — 480px.
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more.
+*/
+
+/* Small screens, laptops – 769px — 1024px.*/
+@media (max-width: 64em) {
+  /* image-content Space  */
+  html {
+    font-size: 8px !important;
+  }
+  .image-container .image-content {
+    margin: 8.4rem 0 8.4rem 4.4rem;
+  }
+}
+/* More than 769 and less than 965*/
+@media (min-width: 48rem) and (max-width: 61rem) {
+  .container {
+    display: grid;
+  }
+
+  .image-container .image-content {
+    margin: 8.4rem 0 0 1.6rem;
+  }
+  .image-container .image-content p {
+    width: 47rem;
+  }
+  .image-container .image-content h3 {
+    font-size: 4.2rem;
+  }
+}
+
+/* iPads, Tablets – 481px — 768px. */
+@media (max-width: 48rem) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .main-image,
+  .image-content,
+  .image-content p,
+  .image-content h3 {
+    display: none;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 8.4rem;
+  }
+  .form-container form h3 {
+    font-size: 1.6rem;
+  }
+  form .submit {
+    font-size: 1.6rem;
+  }
+}
+
+/* 
+display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 8.4rem; */

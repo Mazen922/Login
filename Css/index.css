@@ -1,0 +1,176 @@
+/* Start Global Resets  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --text-color: #333;
+  --white-text-color: #fff;
+  --btn-color: #997825;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  transition: all 0.5s;
+}
+html {
+  font-size: 10px;
+}
+/* End Global Resets  */
+
+/* Start Container Space  */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* End Container Space  */
+
+/* Start Image Container Space  */
+.container .main-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* Image Content Space  */
+.image-container .image-content {
+  margin: 8.4rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 48.2rem;
+  /* height: 26rem; */
+  gap: 1.6rem;
+  color: var(--white-text-color);
+  z-index: 99;
+}
+/* H3 Editing Place */
+.image-content h3 {
+  font-size: 5.6rem;
+  font-weight: 600;
+}
+/* P Editing Place */
+.image-content p {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+/* Start Form Container Space  */
+
+/* Don't Have Account Link Space  */
+.form-container .Sign-Up {
+  font-size: 1.6rem;
+  text-align: right;
+  padding: 0.8rem 1.6rem 0 1.6rem;
+}
+/* a tag  Space  */
+.form-container .Sign-Up .Sign-link {
+  color: var(--text-color);
+}
+.form-container .Sign-Up .Sign-link:hover {
+  color: blue;
+}
+/* Form Space  */
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 4.8rem 4.8rem;
+}
+/* H 3 Form Space  */
+.form-container form h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+/* Form's Buttons Space  */
+form .btn {
+  border: none;
+  width: 100%;
+  border: 1px solid var(--text-color);
+  border-radius: 4rem;
+  padding: 0.8rem 1.6rem;
+  background: #fff;
+  font-size: 1.8rem;
+  display: flex;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+form .btn:hover {
+  background-color: #eee;
+}
+/* OR Space  */
+form .or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #666;
+  position: relative;
+}
+/* before space */
+form .or::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 45%;
+  height: 1px;
+  background-color: #666;
+}
+/* after space */
+form .or::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  width: 45%;
+  height: 1px;
+  background-color: #666;
+}
+/* Labels Editing Space */
+form label {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+/* Input Class Editing Space  */
+form .input {
+  width: 100%;
+}
+/* Target input Elements  */
+form .input-container input {
+  width: 100%;
+  border: none;
+  border: 1px solid #666;
+  padding: 1.2rem;
+  margin: 0.8rem;
+  border-radius: 0.8rem;
+}
+/* Forget Link  */
+form .forget-link {
+  color: #111;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: right;
+}
+form .forget-link:hover {
+  color: blue;
+}
+/* Submit Space  */
+form .submit {
+  border: none;
+  color: var(--white-text-color);
+  background: var(--btn-color);
+  padding: 1.6rem;
+  width: 50%;
+  border-radius: 2.4rem;
+  font-size: 2rem;
+}
+form .submit:hover {
+  background-color: #7d621f;
+}
+/* Sign Up Space two */
+form .two {
+  text-align: left !important;
+  padding: 0 !important;
+}
+/* End Form Container Space  */
+
+/* End Image Container Space  */
